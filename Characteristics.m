@@ -7,7 +7,7 @@ classdef Characteristics
         function obj = Characteristics()
         end
         
-        function obj = addAlfaValue (obj,chanel1, chanel2, chanel3, chanel4, chanel5, chanel6, chanel7, chanel8, chanel9, chanel10, chanel11, chanel12, chanel13, chanel14, chanel15, chanel16, Label)
+        function obj = addAlfaValue (obj, Datos_filtrados, Label)
             CH1 = Datos_filtrados(1,:);
             CH2 = Datos_filtrados(2,:);
             CH3 = Datos_filtrados(3,:);
