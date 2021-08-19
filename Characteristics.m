@@ -7,7 +7,7 @@ classdef Characteristics
         function obj = Characteristics()
         end
         
-        function obj = addAlfaValue (obj, Datos_filtrados, Label)
+        function featTable = addAlfaValue (obj, Datos_filtrados, Label)
             CH1 = Datos_filtrados(1,:);
             CH2 = Datos_filtrados(2,:);
             CH3 = Datos_filtrados(3,:);
