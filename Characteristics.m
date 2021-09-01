@@ -8,13 +8,6 @@ classdef Characteristics
         end
         
         function featTable = addAlfaValue (obj, Datos_filtrados, Label)
-            
-            
-           
-            
-            
-           
-            
             CH1 = Datos_filtrados(1,:);
             canal1 = obj.CalculaValorAlfa(CH1);
             obj.matriz_alfa(length(obj.matriz_alfa)+1).canal1 = canal1;
@@ -47,18 +40,10 @@ classdef Characteristics
             canal7 = obj.CalculaValorAlfa(CH7);
             obj.matriz_alfa(length(obj.matriz_alfa)).canal7 = canal7;
             
-             CH8 = Datos_filtrados(8,:);
+            CH8 = Datos_filtrados(8,:);
             canal8 = obj.CalculaValorAlfa(CH8);
             obj.matriz_alfa(length(obj.matriz_alfa)).canal8 = canal8;
-            
-            
-            
-            
-            
-            
-            
-            
-            
+       
             CH9 = Datos_filtrados(9,:);
             canal9 = obj.CalculaValorAlfa(CH9);
             obj.matriz_alfa(length(obj.matriz_alfa)).canal9 = canal9
