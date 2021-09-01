@@ -27,11 +27,7 @@ classdef Characteristics
             CH5 = Datos_filtrados(5,:);
             canal5 = obj.CalculaValorAlfa(CH5);
             obj.matriz_alfa(length(obj.matriz_alfa)).canal5 = canal5;
-            
-            
-           
-            
-            
+      
             CH6 = Datos_filtrados(6,:);
             canal6 = obj.CalculaValorAlfa(CH6);
             obj.matriz_alfa(length(obj.matriz_alfa)).canal6 = canal6;
