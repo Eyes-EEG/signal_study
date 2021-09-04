@@ -4,7 +4,7 @@ listaFicheros = {'1_close_left_eye_1.csv', '1_close_left_eye_2.csv', '1_close_le
 markers = {1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4};
 
 myDataset = Dataset();
-myCharacteristics = Characteristics();
+myFeatures = Features();
 
  for i = 1 : length(markers)
      myDataset = myDataset.addTrial(listaFicheros{i}, markers{i})   
@@ -13,5 +13,5 @@ Datos_filtrados = {myDataset.data_filtered(1:160).filtered_data};
 
 Label = [ones(1,40) (repmat (2,1,40)) (repmat (3,1,40)) (repmat (4,1,40))];
   for i = 1 : length(CH1)
-       myCharacteristics = myCharacteristics.addAlfaValue(Datos_filtrados{i}, Label(i))   
+       myFeatures = myFeatures.addAlfaValue(Datos_filtrados{i}, Label(i))   
   end
