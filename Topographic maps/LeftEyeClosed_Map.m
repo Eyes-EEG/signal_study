@@ -1,4 +1,4 @@
- Data = myCharacteristics.matriz_alfa(1,125);
+ Data = obj.features.matriz_alfa(1,125);
  
  Alpha_values = [Data.canal1 Data.canal2 Data.canal3  Data.canal4  Data.canal5  Data.canal6  Data.canal7  Data.canal8  Data.canal9  Data.canal10  Data.canal11  Data.canal12  Data.canal13 Data.canal14  Data.canal15  Data.canal16 ]; 
 
