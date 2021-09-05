@@ -13,5 +13,5 @@ Datos_filtrados = {myDataset.data_filtered(1:160).filtered_data};
 
 Label = [ones(1,40) (repmat (2,1,40)) (repmat (3,1,40)) (repmat (4,1,40))];
   for i = 1 : length(CH1)
-       myFeatures = myFeatures.addAlfaValue(Datos_filtrados{i}, Label(i))   
+       myFeatures = myFeatures.CalculaValorAlfa(Datos_filtrados{i}, Label(i))   
   end
